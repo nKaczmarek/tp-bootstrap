@@ -14,7 +14,203 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <img src="images/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="#">Collaborateurs
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Activités</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <a href="#" class="btn btn-secondary mr-2 mt-2">Ajouter un collaborateurs</a>
+            </div>
+        </div>
+
+        <div class="container-fluid pl-5 pr-5">
+            <h1>Les collaborateurs</h1>
+
+            <form class="form-row">
+                <div class="form-inline col-11 mb-2">
+                    <label for="input_collaborateur">Rechercher un nom ou un prénom qui commence par : </label>
+                    <input type="text" id="input_collaborateur" class="form-control ml-2">
+                    <input type="text" class="btn btn-primary ml-2" value="Rechercher">
+                    <div class="form-group form-check ml-2">
+                        <input type="checkbox" class="form-check-input" id="check_collab_supprimer">
+                        <label class="form-check-label" for="check_collab_supprimer">Voir les collaborateurs desactivés</label>
+                    </div>
+                </div>
+                <div class="form-inline col-11 mb-5">
+                    <label for="input_collaborateur">Filtrer par département </label>
+                    <select name="dept" id="filtre_dept" class="form-control ml-2">
+                        <option value="tous">Tous</option>
+                        <option value="compta">Compta</option>
+                        <option value="info">Informatique</option>
+                    </select>
+                </div>
+            </form>
+
+
+        </div>
+        <div class="container">
+            <div class="row justify-content-beetwin">
+                <div class="col-sm-6 col-md-5 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-muted">Nom Prenom</div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="row justify-content-beetwin">
+                                <img src="images/bootstrap-solid.svg" width="70" height="70" class="d-inline-block align-top ml-2 mt-3" alt="">
+                                <ul class="list-group ml-2">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Fonction
+                                        <span class="badge badge-light ">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Département
+                                        <span class="badge badge-light">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Email
+                                        <span class="badge badge-light">test@test.com </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        telephone
+                                        <span class="badge badge-light ml-3">06.06.06.06.06</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row justify-content-end">
+                                <input type="button" value="Modifier" class="btn btn-secondary mt-2 mr-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-muted">Nom Prenom</div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="row justify-content-beetwin">
+                                <img src="images/bootstrap-solid.svg" width="70" height="70" class="d-inline-block align-top ml-2 mt-3" alt="">
+                                <ul class="list-group ml-2">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Fonction
+                                        <span class="badge badge-light ">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Département
+                                        <span class="badge badge-light">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Email
+                                        <span class="badge badge-light">test@test.com </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        telephone
+                                        <span class="badge badge-light ml-3">06.06.06.06.06</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row justify-content-end">
+                                <input type="button" value="Modifier" class="btn btn-secondary mt-2 mr-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-muted">Nom Prenom</div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="row justify-content-beetwin">
+                                <img src="images/bootstrap-solid.svg" width="70" height="70" class="d-inline-block align-top ml-2 mt-3" alt="">
+                                <ul class="list-group ml-2">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Fonction
+                                        <span class="badge badge-light ">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Département
+                                        <span class="badge badge-light">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Email
+                                        <span class="badge badge-light">test@test.com </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        telephone
+                                        <span class="badge badge-light ml-3">06.06.06.06.06</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row justify-content-end">
+                                <input type="button" value="Modifier" class="btn btn-secondary mt-2 mr-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="text-muted">Nom Prenom</div>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="row justify-content-beetwin">
+                                <img src="images/bootstrap-solid.svg" width="70" height="70" class="d-inline-block align-top ml-2 mt-3" alt="">
+                                <ul class="list-group ml-2">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Fonction
+                                        <span class="badge badge-light ">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Département
+                                        <span class="badge badge-light">test </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        Email
+                                        <span class="badge badge-light">test@test.com </span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        telephone
+                                        <span class="badge badge-light ml-3">06.06.06.06.06</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row justify-content-end">
+                                <input type="button" value="Modifier" class="btn btn-secondary mt-2 mr-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
